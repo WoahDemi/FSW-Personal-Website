@@ -6,8 +6,9 @@
     "menu footer footer footer footer footer";
   grid-gap: 20px;
   background-color: #504061;
-  opacity: .89;
+  opacity: 0.89;
   padding: 10px;
+  color: white;
 }
 
 .nav-bar {
@@ -15,33 +16,31 @@
   border: 8px dotted red;
   text-align: center;
   color: chartreuse;
-  /* background-colocornflowerblue; */
+  font-size: 16px;
 }
-.nav-bar > a:visited{
+.nav-bar > a:visited {
   color: white;
 }
 .item2 {
   grid-area: menu;
-  /* border: 8px solid yellow; */
 }
 .item3 {
   grid-area: main;
-  /* border: 8px solid green; */
+
 }
 .item4 {
   grid-area: right;
-  /* border: 8px solid blue; */
+
 }
 .item5 {
   display: grid;
   grid-area: footer;
-  /* border: 8px solid violet; */
-  /* height: 300px;
-  width: 250px;; */
+
 }
 
 .grid-container > div {
-  /* background-color: rgba(255, 255, 255, 0.8); */
+display: flex;
+justify-content: space-evenly;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
@@ -49,62 +48,54 @@
 
 #about > img {
   height: 300px;
+  display: flex;
   width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  opacity: 1;
-  
+  width: 70%;
+  justify-content: center;
+  margin-left: 90px;
+
+}
+#text-box {
+  border: dashed greenyellow 2.5px;
+  color: white;
 }
 .cap {
   height: 200px;
   width: 250px;
 }
-#contact{
+#contact {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 50px);
-  /* display: flex; */
-}
-/* #contact > a > img{
-  height: 40px;
-  display:flex;
-  width: 40px;
-  align-content: center;
-  /* border: red 1px solid; */
-  /* background-color: seashell;
-  justify-content: center; */
-/* }  */
-#contact > h2 {
-  grid-column: 2/5 ;
-}
-body{
- background-image: url(./josh-tree.png);
+  /* grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 50px); */
+
 }
 
-.item2 > #project-list{
-  /* display:flex; */
+#contact > h2 {
+  grid-column: 2/3;
+}
+body {
+  background-image: url(./josh-tree.png);
+}
+
+.item2 > #project-list {
+ 
   border: 2px yellowgreen dotted;
-  /* justify-content: center; */
   padding: 10px;
   list-style-type: none;
+
 }
-.activities{
-  background-image: url(./note-pic.png);
-  border: yellow 5px solid;
-  background-color: purple;
+.activities {
+  /* background-image: url(./note-pic.png); */
+  /* border: yellow 5px solid; */
+  /* background-color: gray; */
 }
-#email{
-  grid-column: 4/5;
-}
-.contact2{
-  display:flex
-}
-.contact2 > img{
+#email {
+  height: 60px;
   width: 40px;
-  height: 40px;
 }
 
-/* #activity-holder{
-
-} */
+.item5 > a {
+  height: 60px;
+  width: 40px;
+  grid-column: 2/3;
+}
