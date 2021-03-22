@@ -1,0 +1,65 @@
+body{
+    background-color :paleturquoise;
+}
+#nav-bar {
+  border: blue 2px solid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: repeat(8, 1fr); */
+  gap: 1em;
+  /* grid-gap: 10px; */
+}
+#about-link {
+  grid-row: 2/3;
+}
+h1 {
+  text-decoration: underline;
+}
+#cap {
+  height: 200px;
+  width: auto;
+}
+#nav-links {
+  display: flex;
+  /* justify-content: space-evenly; */
+  list-style-type: none;
+}
+#nav-links > li {
+  margin: 20px;
+}
+#contact-me {
+  display: flex;
+
+  height: 200px;
+  width: 200px;
+  justify-content: space-evenly;
+}
+#contact-me > a {
+  height: 100px;
+  width: 10px;
+}
+#email {
+  height: 40px;
+  width: 40x;
+}
+
+.light-mode {
+  /* width: 100%; */
+  background-color: black;
+}
+#about-me {
+  border: solid red 1px;
+  width: 40%;
+  word-wrap: break-word;
+  height: fit-content;
+  width: fit-content;
+  
+}
+#bodyody{
+    display: grid;
+}
+.container {
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+    border: blue solid;
+  }
