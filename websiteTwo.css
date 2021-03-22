@@ -84,11 +84,7 @@ body {
   list-style-type: none;
 
 }
-.activities {
-  /* background-image: url(./note-pic.png); */
-  /* border: yellow 5px solid; */
-  /* background-color: gray; */
-}
+
 #email {
   height: 60px;
   width: 40px;
