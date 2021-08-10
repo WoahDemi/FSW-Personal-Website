@@ -1,9 +1,21 @@
+html {
+  height: 100%;
+  width: 100%
+}
+
+
 .grid-container {
   display: grid;
+  /* grid-template-areas:
+    "header header header header"
+    "menu main . right"
+    "menu main . right"
+    ". footer footer ."; */
   grid-template-areas:
-    "header header header header header header"
-    "menu main main main right right"
-    "menu footer footer footer footer footer";
+    ". nav nav ."
+    "project about . activity"
+    "project about . activity"
+    "project about . contact";
   grid-gap: 20px;
   background-color: #504061;
   opacity: 0.89;
@@ -12,51 +24,63 @@
 }
 
 .nav-bar {
-  grid-area: header;
-  border: 8px dotted red;
+  grid-area: nav;
+  border: 2px solid red;
   text-align: center;
   color: chartreuse;
   font-size: 16px;
+  background-color: ivory;
 }
 .nav-bar > a:visited {
-  color: white;
+  color: red;
 }
 .item2 {
-  grid-area: menu;
+  grid-area: project;
 }
 .item3 {
-  grid-area: main;
-
-}
-.item4 {
-  grid-area: right;
-
-}
-.item5 {
-  display: grid;
-  grid-area: footer;
+  grid-area: about;
 
 }
 
-.grid-container > div {
-display: flex;
-justify-content: space-evenly;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-
-#about > img {
-  height: 300px;
+#about{
   display: flex;
-  width: 250px;
-  width: 70%;
+  flex-direction: column;
+  align-items: center;
+}
+#about > img {
+  height: auto;
+  display: flex;
+  /* width: 50px; */
+  width: 30%;
   justify-content: center;
   margin-left: 90px;
 
 }
+.item4 {
+  grid-area: activity;
+
+}
+.item5 {
+  display: grid;
+  grid-area: contact;
+
+}
+
+/* .grid-container > div {
+display: flex;
+border: 9px solid pink;
+justify-content: space-evenly;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} */
+
+.grid-container{
+  viewport-fit: 100%;
+}
+
 #text-box {
-  border: dashed greenyellow 2.5px;
+  border: solid greenyellow 2.5px;
   color: white;
 }
 .cap {
@@ -65,6 +89,7 @@ justify-content: space-evenly;
 }
 #contact {
   display: grid;
+  border: 1px solid yellow
   /* grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 50px); */
 
@@ -79,7 +104,7 @@ body {
 
 .item2 > #project-list {
  
-  border: 2px yellowgreen dotted;
+  border: 2px yellowgreen solid;
   padding: 10px;
   list-style-type: none;
 
@@ -94,4 +119,8 @@ body {
   height: 60px;
   width: 40px;
   grid-column: 2/3;
+}
+#activity-holder{
+  border: solid pink 2px;
+  background-image: url(./l8r/note-pic.png);
 }

@@ -1,50 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./websiteTwo.css" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<html>
+<title>WoahDemi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./websiteTwo.js" defer></script>
-    <title>myWebsite</title>
-  </head>
+<style>
+body {font-family: "Times New Roman", Georgia, Serif; background-image: url(./josh-tree.png);}
+#about{background-color: antiquewhite;}
+#projects{background-color: antiquewhite;}
+#contact{background-color: antiquewhite;}
+#linkedin{
+   height: 60px;
+   width: 60px;
+}
+#email{
+   height: 60px;
+   width: 60px;
+}
+#github{
+   height: 60px;
+   width: 60px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
 
-  <body>
-    <section class="grid-container">
-      <section class="nav-bar">
-        <a href="#about">About - Me</a>
-        <a href="#projects">Projects</a>
-        <a href="https://docs.google.com/document/d/16iNgDTHncxzhpOS7_s_LrSuPN1BFJYPOTiPKs12ioRs/edit?usp=sharing" target="_blank">Resume</a>
-        <a href="#contact">Contact</a>
-      </section>
-      <section id="projects" class="item2">
-        <h2>Projects</h2>
-        <ul id="project-list">
-          <li>To Do List</li>
-          <section id="to-do-list">
-          <img class="cap" src="./Screen Shot 2021-03-10 at 2.59.35 PM.png"/>
-          </section>
-          <li>Snowman Command Line Game</li>
-          <section id="snowman">
-            <img class="cap" src="./snowman.gif" alt="">
-          </section>
-        </ul>
-      </section>
-      <section id="about" class="item3"> 
-        
-        <img src="./Pursuit 7.0 - Oluwademilade (Demi) Jobi.jpg" alt="Pursuit headshot of me in LinkedIn sweatshirt"> 
-        <div id="text-box">Hi & welcome! My name is Oluwademilade Jobi (Oh-lou-wah-day-me-lah-day) but you can call me Demi. New to the tech field, I began a journey into IT early 2019 and siezed the opportunity to continue to evolve by joining Pursuit. I'm a developing Full-Stack Web Developer and here's my second attempt at a website 🙂. P.S: please feel free to reach out with any suggestions or ideas on interactive web elements for my periodic updates!</div>
-      </section>
-      <section id="find-fun" class="item4">
-        <h2>Looking for something new to do?</h2>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:2px;">
+    <a href="#home" class="w3-bar-item w3-button">Oluwademilade Jobi</a>
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="https://docs.google.com/document/d/16iNgDTHncxzhpOS7_s_LrSuPN1BFJYPOTiPKs12ioRs/edit?usp=sharing" target="_blank" class="w3-bar-item w3-button">Resume</a>
+
+    </div>
+  </div>
+</div>
+
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="./Pursuit 7.0 - Oluwademilade (Demi) Jobi.jpg" alt="Pursuit headshot of me in LinkedIn sweatshirt" class="w3-round w3-image" alt="Table Setting" width="600" height="750">
+
+    </div>
+  
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Me</h1><br>
+      <p class="w3-large">Hi & welcome! My name is Oluwademilade Jobi (Oh-lou-wah-day-me-lah-day) but you can call me Demi. New to the tech field, I began a journey into IT early 2019 and siezed the opportunity to continue to evolve by joining Pursuit. I'm a developing Full-Stack Web Developer and here's my second attempt at a website 🙂. P.S: please feel free to reach out with any suggestions or ideas on interactive web elements for my periodic updates</p>
+      <p class="w3-large w3-text-grey w3-hide-medium"> <h4 class="w3-center" style="letter-spacing:2px">Looking for something new to do?</h4>
         I am not a fan of being bored! Absolutely not. If you're like me...click this button! Find something to do 😁
         <br>
         <button id="bored">Change up the pace</button>
-        <div id="activity-holder"></div>
-        </section>
-      <section id="contact" class="item5">
-        <h2>You can find me!</h2>
+        <ul id="activity-holder"></ul></p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <div class="w3-row w3-padding-64" id="projects">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Projects</h1><br>
+      <h4>To Do List</h4>
+      <p class="w3-text-grey"><a href="https://github.com/WoahDemi/Pursuit-Core-Events-Lab">Github</a></p><br>
+    
+      <h4>Snowman Command Line Game</h4>
+      <p class="w3-text-grey"><a href="https://github.com/WoahDemi/FSW-CLI-Snowman">Github</a><br>
+    
+      <h4>Calculator</h4>
+      <p class="w3-text-grey"><a href="https://github.com/WoahDemi/FSW-React-Calculator">Github</a> <a href="https://demis-calculator.netlify.app">Live</a></p>  
+
+      <h4>HomeGoodsDepot</h4>
+      <p class="w3-text-grey"><a href="https://github.com/WoahDemi/homeGoodsDepot">Github</a> <a href="https://homegoodsdepot.netlify.app">Live</a></p>    
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+      <img src="./Screen Shot 2021-03-10 at 2.59.35 PM.png" alt="" class="w3-round w3-image " style="width:100%">
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="./snowman.gif" alt="" class="w3-round w3-image " style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="w3-container w3-padding-64 w3-center" id="contact">
+    <h1>Contact</h1><br>
+    <div class = "svg"> 
           <a href="https://www.linkedin.com/in/demijobi/" target="_blank"
             ><img
               src="./linkedin-original.svg"
@@ -57,11 +104,11 @@
               alt="github-link"
               id="github"
           /></a>
-          <a href="mailto:oluwademiladejob!@pursuit.org"><img
+          <a href="mailto:oluwademiladejobi@pursuit.org"><img
               src="./paper-plane-2563.svg"
               alt="email"
               id="email"
           /></a>
-    </section>
-  </body>
-</html>
+        </div>
+  </div>
+  </div>

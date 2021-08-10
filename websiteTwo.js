@@ -2,11 +2,8 @@ const button = document.getElementById("bored")
 const board = document.getElementById("activity-holder")
 const getActivity = async () =>{
     let getData = await axios.get("https://www.boredapi.com/api/activity?type=recreational")
-    let getActivity = getData.data.activity
-    let activityHolder = document.createElement("li")
-    activityHolder.textContent = getActivity
-    activityHolder.classList.add("activities")
-    board.appendChild(activityHolder)
+    let activity = getData.data.activity
+    board.textContent = activity
     getData.data.activity 
 }
 button.addEventListener("click", getActivity)
